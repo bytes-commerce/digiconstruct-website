@@ -1,5 +1,5 @@
 controllers:
   resource:
     path: '@WebsiteBundle/Controller/'
-    namespace: App\WebsiteBundle
+    namespace: DigiConstruct\WebsiteBundle
   type: attribute

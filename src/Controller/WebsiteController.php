@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\WebsiteBundle\Controller;
+namespace DigiConstruct\WebsiteBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;

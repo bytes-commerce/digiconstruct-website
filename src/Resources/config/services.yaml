@@ -3,6 +3,6 @@ services:
     autowire: true
     autoconfigure: true
 
-  App\WebsiteBundle\:
+  DigiConstruct\WebsiteBundle\:
     resource: '../*'
     exclude: '../{DependencyInjection,Entity,Migrations,Tests,Resources}'
