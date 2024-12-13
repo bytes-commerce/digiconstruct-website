@@ -7,7 +7,7 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 
-final class WebsiteExtension extends Extension
+class WebsiteExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
@@ -15,7 +15,6 @@ final class WebsiteExtension extends Extension
             $container,
             new FileLocator(__DIR__.'/../Resources/config')
         );
-
         $loader->load('services.php');
     }
 }
