@@ -1,6 +1,6 @@
 <?php
 
-namespace YourVendor\WebsiteBundle\DependencyInjection;
+namespace DigiConstruct\WebsiteBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

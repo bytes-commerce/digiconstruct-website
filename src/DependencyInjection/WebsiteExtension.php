@@ -1,6 +1,6 @@
 <?php
 
-namespace YourVendor\WebsiteBundle\DependencyInjection;
+namespace DigiConstruct\WebsiteBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
