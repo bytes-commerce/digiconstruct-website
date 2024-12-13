@@ -1,0 +1,168 @@
+[394] Log opened at 2024-12-13 13:03:38.759637
+[394] [Config] INFO: Control socket set up successfully: '@xdebug-ctrl.394'
+[394] [Step Debug] INFO: Checking for client discovery headers: 'HTTP_X_FORWARDED_FOR,REMOTE_ADDR'.
+[394] [Step Debug] INFO: Checking header 'HTTP_X_FORWARDED_FOR'.
+[394] [Step Debug] INFO: Checking header 'REMOTE_ADDR'.
+[394] [Step Debug] WARN: Could not discover client host through HTTP headers, connecting to configured address/port: host.docker.internal:9000.
+[394] [Step Debug] INFO: Connected to debugging client: host.docker.internal:9000 (fallback through xdebug.client_host/xdebug.client_port).
+[394] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///usr/local/bin/composer" language="PHP" xdebug:language_version="8.2.26" protocol_version="1.0" appid="394" idekey="PHPSTORM" xdebug:ctrl_socket="xdebug-ctrl.394"><engine version="3.4.0"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2024 by Derick Rethans]]></copyright></init>
+
+[394] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[394] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[394] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[394] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[394] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[394] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[394] [Step Debug] <- feature_set -i 7 -n breakpoint_include_return_value -v 1
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="7" feature="breakpoint_include_return_value" success="1"></response>
+
+[394] [Step Debug] <- stdout -i 8 -c 1
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="8" success="1"></response>
+
+[394] [Step Debug] <- status -i 9
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="9" status="starting" reason="ok"></response>
+
+[394] [Step Debug] <- step_into -i 10
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="10" status="break" reason="ok"><xdebug:message filename="file:///usr/local/bin/composer" lineno="14"></xdebug:message></response>
+
+[394] [Step Debug] <- eval -i 11 -- Z2V0ZW52KCdQSFBfSURFX0NPTkZJRycpIT1mYWxzZQ==
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[394] [Step Debug] <- eval -i 12 -- KHN0cmluZykoZ2V0ZW52KCdQSFBfSURFX0NPTkZJRycpKQ==
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="20" encoding="base64"><![CDATA[c2VydmVyTmFtZT1vcmdhTWFyY28=]]></property></response>
+
+[394] [Step Debug] <- breakpoint_set -i 13 -t line -f file:///var/www/html/src/Components/Customer/Request/AttachmentHandler.php -n 24
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Components/Customer/Request/AttachmentHandler.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="13" id="3940001" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 14 -t line -f file:///var/www/html/src/Components/Project/Listener/ProjectRenamingListener.php -n 52
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Components/Project/Listener/ProjectRenamingListener.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="14" id="3940002" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 15 -t line -f file:///var/www/html/src/Factory/Tasks/NotificationFactory.php -n 46
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Factory/Tasks/NotificationFactory.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="3940003" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 16 -t line -f file:///var/www/html/tests/Behat/Company/CompanyContext.php -n 106
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/tests/Behat/Company/CompanyContext.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="16" id="3940004" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 17 -t line -f file:///var/www/html/src/Controller/Admin/Sales/OfferController.php -n 186
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Controller/Admin/Sales/OfferController.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="17" id="3940005" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 18 -t line -f file:///var/www/html/src/Components/DPF/Handler/TaskGroupHandler.php -n 31
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Components/DPF/Handler/TaskGroupHandler.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="18" id="3940006" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 19 -t line -f file:///var/www/html/src/DataFixtures/TasksFixtures.php -n 83
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/DataFixtures/TasksFixtures.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="19" id="3940007" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 20 -t line -f file:///var/www/html/src/Factory/Project/ProjectFactory.php -n 125
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Factory/Project/ProjectFactory.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="20" id="3940008" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 21 -t line -f file:///var/www/html/src/Controller/Admin/Tasks/TaskController.php -n 456
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Controller/Admin/Tasks/TaskController.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="21" id="3940009" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 22 -t line -f file:///var/www/html/src/Controller/Admin/Developer/ErrorController.php -n 101
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Controller/Admin/Developer/ErrorController.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="22" id="3940010" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 23 -t line -f file:///var/www/html/src/DataFixtures/TasksFixtures.php -n 39
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/DataFixtures/TasksFixtures.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="23" id="3940011" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 24 -t line -f file:///var/www/html/src/Components/TimeTracking/Generator/TimeTrackingEntryGenerator.php -n 43 -- JGRhdGUtPmZvcm1hdCgnZCcpIDw9IDI1ICYmICRkYXRlLT5mb3JtYXQoJ2QnKSA+PSAyMg==
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Components/TimeTracking/Generator/TimeTrackingEntryGenerator.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="24" id="3940012" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 25 -t line -f file:///var/www/html/src/Controller/Admin/Project/ProjectController.php -n 49
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Controller/Admin/Project/ProjectController.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="25" id="3940013" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 26 -t line -f file:///var/www/html/vendor/easycorp/easyadmin-bundle/src/Router/AdminRouteGenerator.php -n 158
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/vendor/easycorp/easyadmin-bundle/src/Router/AdminRouteGenerator.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="26" id="3940014" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 27 -t line -f file:///var/www/html/vendor/easycorp/easyadmin-bundle/src/Config/Crud.php -n 359
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/vendor/easycorp/easyadmin-bundle/src/Config/Crud.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="27" id="3940015" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 28 -t line -f file:///var/www/html/src/Components/Attachment/UploadHandler.php -n 128
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Components/Attachment/UploadHandler.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="28" id="3940016" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 29 -t line -f file:///var/www/html/src/Components/OpenAI/Processor/Processor.php -n 52
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Components/OpenAI/Processor/Processor.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="29" id="3940017" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 30 -t line -f file:///var/www/html/src/Controller/Admin/Report/VehicleReportController.php -n 50
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Controller/Admin/Report/VehicleReportController.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="30" id="3940018" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 31 -t line -f file:///var/www/html/vendor/symfony/validator/Constraints/Image.php -n 220
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/vendor/symfony/validator/Constraints/Image.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="31" id="3940019" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 32 -t line -f file:///var/www/html/src/Controller/Admin/Project/ProjectController.php -n 86
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Controller/Admin/Project/ProjectController.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="32" id="3940020" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 33 -t line -f file:///var/www/html/src/Components/Customer/Request/Listener/Actions/QuoteAcceptedAction.php -n 65
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Components/Customer/Request/Listener/Actions/QuoteAcceptedAction.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="33" id="3940021" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 34 -t line -f file:///var/www/html/src/Components/DPF/Handler/TaskGroupHandler.php -n 35
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Components/DPF/Handler/TaskGroupHandler.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="34" id="3940022" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 35 -t line -f file:///var/www/html/vendor/symfony/property-access/PropertyAccessor.php -n 456
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/vendor/symfony/property-access/PropertyAccessor.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="35" id="3940023" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 36 -t line -f file:///var/www/html/tests/Unit/Components/Documents/PdfGeneratorTest.php -n 105
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/tests/Unit/Components/Documents/PdfGeneratorTest.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="36" id="3940024" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 37 -t line -f file:///var/www/html/src/Controller/Admin/Sales/OfferController.php -n 62
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Controller/Admin/Sales/OfferController.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="37" id="3940025" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 38 -t line -f file:///var/www/html/src/Controller/Admin/Sales/OfferCrudController.php -n 405
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Controller/Admin/Sales/OfferCrudController.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="38" id="3940026" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 39 -t line -f file:///var/www/html/src/Twig/TwigExtension.php -n 31
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/src/Twig/TwigExtension.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="39" id="3940027" resolved="unresolved"></response>
+
+[394] [Step Debug] <- breakpoint_set -i 40 -t line -f file:///var/www/html/vendor/symfony/dom-crawler/FormFieldRegistry.php -n 79
+[394] [Step Debug] WARN: Breakpoint file name does not exist: /var/www/html/vendor/symfony/dom-crawler/FormFieldRegistry.php (No such file or directory).
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="40" id="3940028" resolved="unresolved"></response>
+
+[394] [Step Debug] <- stack_get -i 41
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="41"><stack where="{main}" level="0" type="file" filename="file:///usr/local/bin/composer" lineno="14"></stack></response>
+
+[394] [Step Debug] <- run -i 42
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="42" status="stopping" reason="ok"></response>
+
+[394] [Step Debug] <- detach -i 43
+[394] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="detach" transaction_id="43" status="stopping" reason="ok"></response>
+
+[394] Log closed at 2024-12-13 13:03:39.444859
+

@@ -1,0 +1,5 @@
+controllers:
+  resource:
+    path: '@WebsiteBundle/Controller/'
+    namespace: App\WebsiteBundle
+  type: attribute

@@ -1,0 +1,28 @@
+{
+  "name": "seec/digiconstruct-website",
+  "description": "A frontend website bundle for the backend application",
+  "type": "symfony-bundle",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Maximilian Graf Schimmelmann",
+      "email": "office@bytes-commerce.de"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "symfony/framework-bundle": "^7",
+    "symfony/http-kernel": "^7",
+    "symfony/config": "^7"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\WebsiteBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0-dev"
+    }
+  }
+}
