@@ -6,3 +6,6 @@ services:
   DigiConstruct\WebsiteBundle\:
     resource: '../*'
     exclude: '../{DependencyInjection,Entity,Migrations,Tests,Resources}'
+
+  DigiConstruct\WebsiteBundle\Controller\DefaultController:
+    tags: ['controller.service_arguments']
