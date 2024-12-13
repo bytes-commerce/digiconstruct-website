@@ -17,4 +17,12 @@ final class DefaultController extends AbstractController
             'message' => 'Hello from the Website Bundle!'
         ]);
     }
+
+    #[Route('/test-route', name: 'web.app.test')]
+    public function testAction(): Response
+    {
+        return $this->render('@Website/php-test.html.twig', [
+            'message' => 'Hello from the Website Bundle!'
+        ]);
+    }
 }
