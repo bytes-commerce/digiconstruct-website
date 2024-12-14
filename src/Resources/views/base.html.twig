@@ -12,14 +12,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Recursive:wght@400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
 
-	<link rel="icon" href="{{ absolute_url(asset('favicon.ico')) }}" type="image/x-icon" />
+	<link rel="icon" href="{{ absolute_url(asset('bundles/website/assets/favicon.ico')) }}" type="image/x-icon" />
 
 	{% block stylesheets %}
-		<link rel="preload" href="{{ absolute_url(asset('static/css/icons.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-		<link rel="preload" href="{{ absolute_url(asset('static/css/theme.min.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+		<link rel="preload" href="{{ absolute_url(asset('bundles/website/assets/css/icons.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+		<link rel="preload" href="{{ absolute_url(asset('bundles/website/assets/css/theme.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 	{% endblock %}
 
-	<script src="{{ absolute_url(asset('static/js/bootstrap.bundle.js')) }}"></script>
+	<script src="{{ absolute_url(asset('bundles/website/assets/js/bootstrap.bundle.js')) }}"></script>
 
 	{% block javascripts %}
 	{% endblock %}
