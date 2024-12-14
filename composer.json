@@ -14,7 +14,9 @@
     "symfony/framework-bundle": "^7",
     "symfony/http-kernel": "^7",
     "symfony/config": "^7",
-    "symfony/translation": "^7.2"
+    "symfony/translation": "^7.2",
+    "symfony/dotenv": "^7.2",
+    "symfony/yaml": "^7.2"
   },
   "autoload": {
     "psr-4": {
