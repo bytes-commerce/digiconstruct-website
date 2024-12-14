@@ -16,7 +16,8 @@
 
 	{% block stylesheets %}
 		<link rel="preload" href="{{ absolute_url(asset('bundles/website/assets/css/icons.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-		<link rel="preload" href="{{ absolute_url(asset('bundles/website/assets/css/theme.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+		<link rel="preload" href="{{ absolute_url(asset('bundles/website/assets/css/theme.min.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+		<link rel="preload" href="{{ absolute_url(asset('bundles/website/assets/css/vendor.min.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 	{% endblock %}
 
 	{% include '@Website/components/hsConfig.html.twig' %}
