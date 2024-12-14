@@ -1,3 +1,0 @@
-controllers:
-  resource: '@WebsiteBundle/Controller/'
-  type: attribute

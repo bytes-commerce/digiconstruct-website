@@ -42,6 +42,9 @@ return [
             'login' => [
                 'title' => 'Login'
             ],
+            'register' => [
+                'title' => 'Registrieren'
+            ]
         ]
     ]
 ];

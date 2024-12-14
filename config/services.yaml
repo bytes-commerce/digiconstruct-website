@@ -4,8 +4,8 @@ services:
     autoconfigure: true
 
   DigiConstruct\WebsiteBundle\:
-    resource: '../*'
-    exclude: '../{DependencyInjection,Entity,Migrations,Tests,Resources}'
+    resource: '../src/*'
+    exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Resources}'
 
   DigiConstruct\WebsiteBundle\Controller\DefaultController:
     tags: ['controller.service_arguments']
