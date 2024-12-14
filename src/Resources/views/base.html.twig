@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' cdn.jsdelivr.net; img-src data: 'self' w3.org/svg/2000 a.tile.openstreetmap.org b.tile.openstreetmap.org c.tile.openstreetmap.org api.mapbox.com; font-src data: 'self' fonts.gstatic.com; style-src 'unsafe-inline' 'self' fonts.googleapis.com cdn.jsdelivr.net">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+	<title>{% block title %}{{ "digiconstruct.default.title"|raw }}{% endblock %}</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Recursive:wght@400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
+
+	<link rel="icon" href="{{ absolute_url(asset('favicon.ico')) }}" type="image/x-icon" />
+
+	{% block stylesheets %}
+		<link rel="preload" href="{{ absolute_url(asset('static/css/icons.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+		<link rel="preload" href="{{ absolute_url(asset('static/css/theme.min.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+	{% endblock %}
+
+	<script src="{{ absolute_url(asset('static/js/bootstrap.bundle.js')) }}"></script>
+
+	{% block javascripts %}
+	{% endblock %}
+</head>
+
+<body class="{% block body_classes %}{% endblock %}">
+{% include '@Website/components/header/header.html.twig' %}
+{% block body %}{% endblock %}
+{% include '@Website/components/footert/footer.html.twig' %}
+{% block footerjavascripts %}{% endblock %}
+</body>
+</html>
