@@ -11,20 +11,33 @@
 			</a>
 
 			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-				<li><a href="#" class="nav-link px-2 text-secondary">{{ "web.digiconstruct.about.title"|trans }}</a></li>
-				<li><a href="#" class="nav-link px-2 text-white">{{ "web.digiconstruct.features.title"|trans }}</a></li>
-				<li><a href="#" class="nav-link px-2 text-white">{{ "web.digiconstruct.pricing.title"|trans }}</a></li>
-				<li><a href="#" class="nav-link px-2 text-white">{{ "web.digiconstruct.faq.title"|trans }}</a></li>
-				<li><a href="#" class="nav-link px-2 text-white">{{ "web.digiconstruct.contact.title"|trans }}</a></li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-secondary">{{ "web.digiconstruct.about.title"|trans }}</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link px-2 text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">{{ "web.digiconstruct.features.title"|trans }}</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-white">{{ "web.digiconstruct.pricing.title"|trans }}</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-white">{{ "web.digiconstruct.faq.title"|trans }}</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-white">{{ "web.digiconstruct.contact.title"|trans }}</a>
+				</li>
 			</ul>
 
-			<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-				<input type="search" class="form-control form-control-dark text-bg-dark" placeholder="{{ "web.digiconstruct.search.title"|trans }}" aria-label="{{ "web.digiconstruct.search.title"|trans }}">
-			</form>
-
 			<div class="text-end">
-				<button type="button" class="btn btn-outline-light me-2">{{ "web.digiconstruct.login.title"|trans }}</button>
-				<button type="button" class="btn btn-warning">{{ "web.digiconstruct.register.title"|trans }}</button>
+				<button type="button" class="btn btn-primary me-2">{{ "web.digiconstruct.register.title"|trans }}</button>
+				<button type="button" class="btn btn-success">{{ "web.digiconstruct.login.title"|trans }} <i class="lni lni-user-4"></i></button>
 			</div>
 		</div>
 	</div>
