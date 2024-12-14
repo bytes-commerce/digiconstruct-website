@@ -6,6 +6,12 @@ namespace DigiConstruct\WebsiteBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class WebsiteBundle extends Bundle
+final class WebsiteBundle extends Bundle
 {
+    public function getPath(): string
+    {
+        $reflected = new \ReflectionObject($this);
+
+        return \dirname($reflected->getFileName(), 2);
+    }
 }
