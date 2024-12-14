@@ -2,3 +2,5 @@ vendor/
 .env
 .env.local
 xdebug.log
+!src/Resources/public/assets/css/front-dashboard/vendor
+src/Resources/public/assets/css/node_modules
