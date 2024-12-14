@@ -28,7 +28,7 @@ final class DefaultController extends AbstractController
     public function aboutAction(): Response
     {
         return $this->render('@Website/pages/about-digiconstruct.html.twig', [
-            'page_title' => $this->translator->trans('web.digiconstruct.about.title')
+            'page_title' => $this->translator->trans('web.digiconstruct.about.title', [], 'websiteBundle')
         ]);
     }
 
@@ -39,7 +39,7 @@ final class DefaultController extends AbstractController
     public function pricingAction(): Response
     {
         return $this->render('@Website/pages/pricing.html.twig', [
-            'page_title' => $this->translator->trans('web.digiconstruct.pricing.title')
+            'page_title' => $this->translator->trans('web.digiconstruct.pricing.title', [], 'websiteBundle')
         ]);
     }
 
@@ -50,7 +50,7 @@ final class DefaultController extends AbstractController
     public function impressAction(): Response
     {
         return $this->render('@Website/pages/impress.html.twig', [
-            'page_title' => $this->translator->trans('web.digiconstruct.pricing.title')
+            'page_title' => $this->translator->trans('web.digiconstruct.pricing.title', [], 'websiteBundle')
         ]);
     }
 
@@ -61,7 +61,7 @@ final class DefaultController extends AbstractController
     public function contactAction(): Response
     {
         return $this->render('@Website/pages/contact.html.twig', [
-            'page_title' => $this->translator->trans('web.digiconstruct.pricing.title')
+            'page_title' => $this->translator->trans('web.digiconstruct.pricing.title', [], 'websiteBundle')
         ]);
     }
 
@@ -72,7 +72,7 @@ final class DefaultController extends AbstractController
     public function dataPrivacyAction(): Response
     {
         return $this->render('@Website/pages/dataPrivacy.html.twig', [
-            'page_title' => $this->translator->trans('web.digiconstruct.dataPrivacy.title')
+            'page_title' => $this->translator->trans('web.digiconstruct.dataPrivacy.title', [], 'websiteBundle')
         ]);
     }
 
