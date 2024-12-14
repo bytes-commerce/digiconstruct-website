@@ -21,7 +21,7 @@ final class LandingPageController extends AbstractController
     ], name: 'web.app.siteDocumentation')]
     public function siteDocumentationAction(): Response
     {
-        return $this->render('@Website/pages/lading/site-documentation.html.twig', [
+        return $this->render('@Website/pages/landing/site-documentation.html.twig', [
             'page_title' => $this->translator->trans('web.digiconstruct.siteDocumentation.title')
         ]);
     }
@@ -32,7 +32,7 @@ final class LandingPageController extends AbstractController
     ], name: 'web.app.requestHandeling')]
     public function requestHandlingAction(): Response
     {
-        return $this->render('@Website/pages/lading/request-handeling.html.twig', [
+        return $this->render('@Website/pages/landing/request-handeling.html.twig', [
             'page_title' => $this->translator->trans('web.digiconstruct.requestHandeling.title')
         ]);
     }
@@ -43,7 +43,7 @@ final class LandingPageController extends AbstractController
     ], name: 'web.app.taskManagement')]
     public function taskManagemenetAction(): Response
     {
-        return $this->render('@Website/pages/lading/task-management.html.twig', [
+        return $this->render('@Website/pages/landing/task-management.html.twig', [
             'page_title' => $this->translator->trans('web.digiconstruct.taskManagement.title')
         ]);
     }
