@@ -3,9 +3,10 @@ services:
     autowire: true
     autoconfigure: true
 
+  _instanceof:
+    Symfony\Bundle\FrameworkBundle\Controller\AbstractController:
+      tags: ['controller.service_arguments']
+
   DigiConstruct\WebsiteBundle\:
     resource: '../*'
     exclude: '../{DependencyInjection,Entity,Migrations,Tests,Resources}'
-
-  DigiConstruct\WebsiteBundle\Controller\DefaultController:
-    tags: ['controller.service_arguments']
