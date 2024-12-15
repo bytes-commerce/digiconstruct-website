@@ -29365,4 +29365,16 @@ a:hover .text-inherit {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
+.swiper-button-next, .swiper-button-prev {
+  border-radius: var(--bs-border-radius-xxl);
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity));
+  padding: 2rem;
+}
+.swiper-button-next:first-child, .swiper-button-prev:first-child {
+  margin-right: 15px;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=theme.css.map */

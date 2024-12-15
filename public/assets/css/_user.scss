@@ -79,3 +79,17 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
 }
+
+.swiper-button-next, .swiper-button-prev {
+  border-radius: var(--bs-border-radius-xxl);
+  background-color: rgba(var(--bs-primary-rgb),var(--bs-bg-opacity));
+  padding: 2rem;
+
+  &:first-child {
+    margin-right: 15px;
+  }
+
+  &::after {
+    font-size: 25px;
+  }
+}
