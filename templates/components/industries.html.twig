@@ -11,7 +11,77 @@
 				<h6>{{ "web.digiconstruct.industries.headline"|trans }}</h6>
 				<h2 class="hero-fade-element text-primary animate__animated animate__flipInX">{{ "web.digiconstruct.industries.title"|trans }}</h2>
 				<p class="text-muted">{{ "web.digiconstruct.industries.description"|trans }}</p>
+			</div>
 
+			{% set industries = [
+				{
+					"title": "web.digiconstruct.industries.shk.title"|trans,
+					"link": "#",
+					"icon": "bi bi-snow2"
+				},
+				{
+					"title": "web.digiconstruct.industries.electrician.title"|trans,
+					"link": "#",
+					"icon": "bi bi-power"
+				},
+				{
+					"title": "web.digiconstruct.industries.roofing.title"|trans,
+					"link": "#",
+					"icon": "bi bi-house"
+				},
+				{
+					"title": "web.digiconstruct.industries.painter.title"|trans,
+					"link": "#",
+					"icon": "bi bi-brush"
+				},
+				{
+					"title": "web.digiconstruct.industries.plumber.title"|trans,
+					"link": "#",
+					"icon": "bi bi-pipe"
+				},
+				{
+					"title": "web.digiconstruct.industries.carpenter.title"|trans,
+					"link": "#",
+					"icon": "bi bi-hammer"
+				},
+				{
+					"title": "web.digiconstruct.industries.gardener.title"|trans,
+					"link": "#",
+					"icon": "bi bi-tree"
+				},
+				{
+					"title": "web.digiconstruct.industries.flooring.title"|trans,
+					"link": "#",
+					"icon": "bi bi-house"
+				},
+				{
+					"title": "web.digiconstruct.industries.civilEngineering.title"|trans,
+					"link": "#",
+					"icon": "bi bi-pipe"
+				},
+				{
+					"title": "web.digiconstruct.industries.buildingConstruction.title"|trans,
+					"link": "#",
+					"icon": "bi bi-pipe"
+				}
+			] %}
+			<div class="col-sm-12">
+				<div class="d-flex justify-content-start align-items-center">
+					{% for industry in industries %}
+						{% if loop.first or loop.index % 4 == 1 %}
+							<div class="d-flex flex-column me-3">
+						{% endif %}
+						<div class="d-flex flex-row justify-content-start align-items-center">
+							<a href="{{ industry.link }}">
+								<i class="{{ industry.icon }} me-2 fs-1"></i>
+								<span class="text-dark lh-1 fs-1">{{ industry.title }}</span>
+							</a>
+						</div>
+						{% if loop.index % 4 == 0 %}
+							</div>
+						{% endif %}
+					{% endfor %}
+				</div>
 			</div>
 		</div>
 	</div>
