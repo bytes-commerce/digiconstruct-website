@@ -1,3 +1,106 @@
 {% trans_default_domain 'websiteBundle' %}
+{% set features = [
+	{
+		"title": "web.digiconstruct.features.feature1.title"|trans,
+		"subtitle": "web.digiconstruct.features.feature1.subtitle"|trans,
+		"image": "svg/clock-time-watch.svg"
+	},
+	{
+		"title": "web.digiconstruct.features.feature2.title"|trans,
+		"subtitle": "web.digiconstruct.features.feature2.subtitle"|trans,
+		"image": "svg/maps-and-flags-monitor.svg"
+	},
+	{
+		"title": "web.digiconstruct.features.feature3.title"|trans,
+		"subtitle": "web.digiconstruct.features.feature3.subtitle"|trans,
+		"image": "svg/construction-engineer-hard.svg"
+	},
+	{
+		"title": "web.digiconstruct.features.feature4.title"|trans,
+		"subtitle": "web.digiconstruct.features.feature4.subtitle"|trans,
+		"image": "svg/weekly-calendar-monthly-calendar.svg"
+	},
+	{
+		"title": "web.digiconstruct.features.feature5.title"|trans,
+		"subtitle": "web.digiconstruct.features.feature5.subtitle"|trans,
+		"image": "svg/wholesale.svg"
+	},
+	{
+		"title": "web.digiconstruct.features.feature6.title"|trans,
+		"subtitle": "web.digiconstruct.features.feature6.subtitle"|trans,
+		"image": "svg/business-global-globe.svg"
+	},
+	{
+		"title": "web.digiconstruct.features.feature7.title"|trans,
+		"subtitle": "web.digiconstruct.features.feature7.subtitle"|trans,
+		"image": "svg/bobcat-bulldozer-construction.svg"
+	},
+	{
+		"title": "web.digiconstruct.features.feature8.title"|trans,
+		"subtitle": "web.digiconstruct.features.feature8.subtitle"|trans,
+		"image": "svg/storehouse-supply.svg"
+	},
+	{
+		"title": "web.digiconstruct.features.feature9.title"|trans,
+		"subtitle": "web.digiconstruct.features.feature9.subtitle"|trans,
+		"image": "svg/maintenance-mechanic-repair.svg"
+	},
+	{
+		"title": "web.digiconstruct.features.feature10.title"|trans,
+		"subtitle": "web.digiconstruct.features.feature10.subtitle"|trans,
+		"image": "svg/building-construction-crane.svg"
+	}
+] %}
 
-ASDF Test.
+
+<section class="slider-section">
+	<div class="container">
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				{% for item in features %}
+					<div class="swiper-slide">
+						<div class="card shadow-lg">
+							<div class="card-header">
+								<div class="card-header-icon">
+									<div class="w-100" style="max-width: fit-content; ">
+										{{ source('@Website/' ~ item.image) }}
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<h3 class="card-title">{{ item.title }}</h3>
+								<p class="card-text">{{ item.subtitle }}</p>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper(".slider-section .swiper", {
+            slidesPerView: 1,
+            spaceBetween: 45,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    });
+</script>
