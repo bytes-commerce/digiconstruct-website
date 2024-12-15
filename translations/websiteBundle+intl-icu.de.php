@@ -7,7 +7,14 @@ return [
                 'title' => 'Über DigiConstruct'
             ],
             'pricing' => [
-                'title' => 'Preise'
+                'title' => 'Preise',
+                'development' => [
+                    'title' => 'Gründungsmitgliedschaft',
+                ],
+                'request' => [
+                    'title' => 'Standard',
+                    'label' => 'ab 10,99€/Monat',
+                ]
             ],
             'dataPrivacy' => [
                 'title' => 'Datenschutz'
