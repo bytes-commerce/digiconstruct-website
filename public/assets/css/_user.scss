@@ -37,6 +37,15 @@
 }
 
 .gradiant-bg {
-  background: radial-gradient(116.18% 118% at 50% 100%, rgba(251, 249, 249, 0.5) 0%, rgba(251, 249, 249, 0.45) 41.83%, rgba(251, 249, 249, 0.30) 82.52%);
+  background: radial-gradient(116.18% 118%at 50% 100%,rgba(251,249,249,.85)0,rgba(251,249,249,.75) 41.83%,rgba(251,249,249,.45) 82.52%);
   background-size: cover;
+}
+
+.hero-fade-element {
+  font-size: 75px;
+  line-height: 1em;
+  font-family: 'Staatliches', sans-serif;
+  margin-bottom: 0;
+  padding: 0;
+  font-weight: 900;
 }
