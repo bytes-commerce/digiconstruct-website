@@ -12,3 +12,6 @@ services:
 
   DigiConstruct\WebsiteBundle\Controller\LandingPageController:
     tags: ['controller.service_arguments']
+
+  DigiConstruct\WebsiteBundle\Controller\IndustriesController:
+    tags: ['controller.service_arguments']
