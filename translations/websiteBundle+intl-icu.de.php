@@ -4,93 +4,94 @@ return [
     'web' => [
         'digiconstruct' => [
             'about' => [
-                'title' => 'Über DigiConstruct'
+                'title' => 'Über DigiConstruct',
             ],
             'pricing' => [
                 'title' => 'Preise',
+                'description' => 'Wählen Sie das passende Paket für Ihr Unternehmen. Mit DigiConstruct haben Sie alle Funktionen, die Sie für eine effiziente Baustellenverwaltung benötigen. Bitte beachten Sie, dass wir uns aktuell in einer spannenden Phase der Entwicklung befinden und noch weitere Funktionen hinzukommen werden. Sollten Sie sich dazu Entscheiden die Entwicklung von DigiConstruct mit Ihren eigenen Gedanken und Kapitalbeträgen unterstützen zu wollen, so freuen wir uns auf Ihre Rückmeldung. Unser Ziel ist es frei von Wagniskapital zu agieren und einen Dienst ohne Abhängigkeiten zu schaffen.',
                 'development' => [
                     'title' => 'Gründungsmitgliedschaft',
                 ],
                 'request' => [
                     'title' => 'Standard',
                     'label' => 'ab 10,99€/Monat',
-                ]
+                ],
             ],
             'dataPrivacy' => [
-                'title' => 'Datenschutz'
+                'title' => 'Datenschutz',
             ],
             'siteDocumentation' => [
-                'title' => 'Digitale Baustellendokumentation'
+                'title' => 'Digitale Baustellendokumentation',
             ],
             'requestHandeling' => [
-                'title' => 'Anfrage Management'
+                'title' => 'Anfrage Management',
             ],
             'taskManagement' => [
-                'title' => 'Digitale Aufgabenverteilung'
+                'title' => 'Digitale Aufgabenverteilung',
             ],
             'timeTracking' => [
-                'title' => 'Digitale Zeiterfassung'
+                'title' => 'Digitale Zeiterfassung',
             ],
             'contact' => [
-                'title' => 'Kontakt'
+                'title' => 'Kontakt',
             ],
             'impress' => [
-                'title' => 'Impressum'
+                'title' => 'Impressum',
             ],
             'features' => [
                 'title' => 'Funktionen',
                 'feature1' => [
                     'title' => 'Zeiterfassung',
-                    'description' => 'Schluss mit Excel-Listen. Erfassen Sie Ihre Zeiten direkt online.'
+                    'description' => 'Schluss mit Excel-Listen. Erfassen Sie Ihre Zeiten direkt online.',
                 ],
                 'feature2' => [
                     'title' => 'Standortunabhängig',
-                    'description' => 'Egal ob im Büro oder auf der Baustelle. DigiConstruct ist immer dabei.'
+                    'description' => 'Egal ob im Büro oder auf der Baustelle. DigiConstruct ist immer dabei.',
                 ],
                 'feature3' => [
                     'title' => 'Digitale Baustellendokumentation',
-                    'description' => 'Dokumentieren Sie Ihre Baustellen digital und haben Sie alle Informationen immer griffbereit.'
+                    'description' => 'Dokumentieren Sie Ihre Baustellen digital und haben Sie alle Informationen immer griffbereit.',
                 ],
                 'feature4' => [
                     'title' => 'Digitale Aufgabenverteilung',
-                    'description' => 'Verteilen Sie Aufgaben digital mit Fälligkeiten und behalten Sie den Überblick.'
+                    'description' => 'Verteilen Sie Aufgaben digital mit Fälligkeiten und behalten Sie den Überblick.',
                 ],
                 'feature5' => [
                     'title' => 'Anfrage Management',
-                    'description' => 'Verwalten Sie Anfragen digital und Automatisiert - mit KI-Technologie.'
+                    'description' => 'Verwalten Sie Anfragen digital und Automatisiert - mit KI-Technologie.',
                 ],
                 'feature6' => [
                     'title' => 'Kostenlose Testphase',
-                    'description' => 'Testen Sie DigiConstruct 30 Tage kostenlos und unverbindlich.'
+                    'description' => 'Testen Sie DigiConstruct 30 Tage kostenlos und unverbindlich.',
                 ],
                 'feature7' => [
                     'title' => 'Fahrzeugmanagement',
-                    'description' => 'Verwalten und dokumentieren Sie Ihre Fahrzeuge direkt in DigiConstruct.'
+                    'description' => 'Verwalten und dokumentieren Sie Ihre Fahrzeuge direkt in DigiConstruct.',
                 ],
                 'feature8' => [
                     'title' => 'Kontaktverwaltung',
-                    'description' => 'Verwalten Sie Ihre Kontakte und haben Sie alle Informationen immer griffbereit.'
+                    'description' => 'Verwalten Sie Ihre Kontakte und haben Sie alle Informationen immer griffbereit.',
                 ],
                 'feature9' => [
                     'title' => 'Reparaturmanagement',
-                    'description' => 'Auf einen Blick sehen, welche Fahrzeuge repariert werden, oder zum Service müssen.'
+                    'description' => 'Auf einen Blick sehen, welche Fahrzeuge repariert werden, oder zum Service müssen.',
                 ],
                 'feature10' => [
                     'title' => 'Digitale Baustellenkarte',
-                    'description' => 'Behalten Sie den Überblick über Ihre Baustellen und haben Sie alle Informationen immer griffbereit.'
+                    'description' => 'Behalten Sie den Überblick über Ihre Baustellen und haben Sie alle Informationen immer griffbereit.',
                 ],
             ],
             'faq' => [
-                'title' => 'FAQ'
+                'title' => 'FAQ',
             ],
             'home' => [
-                'title' => 'Home'
+                'title' => 'Home',
             ],
             'login' => [
-                'title' => 'Login'
+                'title' => 'Login',
             ],
             'register' => [
-                'title' => 'Registrieren'
+                'title' => 'Registrieren',
             ],
             'service' => [
                 'title' => 'Kostenloser Kundenservice',
@@ -101,7 +102,7 @@ return [
                     'service2' => 'Gemeinsam setzen wir Ihren Zugang korrekt auf und richten alle Funktionen ein.',
                     'service3' => 'Wir stehen Ihnen bei Fragen zur Software zur Verfügung.',
                     'service4' => 'Rasend-schneller Support per E-Mail.',
-                ]
+                ],
             ],
             'industries' => [
                 'title' => 'Für alle Gewerke',
@@ -154,8 +155,8 @@ return [
                     'airConditioning' => 'Klimaanlagenbauer Software von DigiConstruct',
                     'cleaningServices' => 'Reinigungsdienst Software von DigiConstruct',
                     'solarConstruction' => 'Solarbau Software von DigiConstruct',
-                ]
-            ]
-        ]
-    ]
+                ],
+            ],
+        ],
+    ],
 ];
