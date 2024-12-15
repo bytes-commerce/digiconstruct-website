@@ -116,6 +116,11 @@ return [
                     'architect' => 'Architekt',
                     'civilEngineering' => 'Tiefbau',
                     'buildingConstruction' => 'Hochbau',
+                    'roofing' => 'Dachdecker',
+                    'flooring' => 'Fließen-/Bodenleger',
+                    'plumber' => 'Installateur',
+                    'heating' => 'Heizungsbauer',
+                    'airConditioning' => 'Klimaanlagenbauer',
                 ]
             ]
         ]
