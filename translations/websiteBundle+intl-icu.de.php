@@ -100,6 +100,23 @@ return [
                 'title' => 'Für alle Gewerke',
                 'headline' => 'DigiConstruct passt überall',
                 'description' => 'Egal ob Handwerker, Bauunternehmen oder Architekten. DigiConstruct ist für alle Gewerke geeignet und passt sich Ihren Bedürfnissen an. Die speziell in Zusammenarbeit mit Bauunternehmen entwickelte Software bietet Ihnen alle Funktionen, die Sie für eine effiziente Baustellenverwaltung benötigen.',
+                'jobs' => [
+                    'shk' => 'Sanitär, Heizung, Klima',
+                    'electrician' => 'Elektroinstallateur',
+                    'carpenter' => 'Tischler',
+                    'painter' => 'Maler',
+                    'roofer' => 'Dachdecker',
+                    'gardener' => 'Gärtner',
+                    'bricklayer' => 'Maurer',
+                    'plasterer' => 'Stuckateur',
+                    'floorLayer' => 'Bodenleger',
+                    'windowFitter' => 'Fensterbauer',
+                    'metalworker' => 'Metallbauer',
+                    'constructionCompany' => 'Bauunternehmen',
+                    'architect' => 'Architekt',
+                    'civilEngineering' => 'Tiefbau',
+                    'buildingConstruction' => 'Hochbau',
+                ]
             ]
         ]
     ]
