@@ -1,0 +1,47 @@
+{% extends '@Website/base.html.twig' %}
+
+{% block body %}
+	<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+		<h1 class="display-4 fw-normal text-body-emphasis">{{ "web.digiconstruct.pricing.title"|trans }}</h1>
+		<p class="fs-5 text-body-secondary">{{ "web.digiconstruct.pricing.description"|trans }}</p>
+	</div>
+	<main>
+		<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+			<div class="col">
+				<div class="card mb-4 rounded-3 shadow-sm">
+					<div class="card-header py-3">
+						<h4 class="my-0 fw-normal">{{ "web.digiconstruct.pricing.request.title" }}</h4>
+					</div>
+					<div class="card-body">
+						<h2 class="card-title pricing-card-title">{{ "web.digiconstruct.pricing.request.label"|trans }}</h2>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>10 Benutzer inklusive</li>
+							<li>20 GB Cloud-Speicherplatz</li>
+							<li>Email-Support</li>
+							<li>Alle Funktionen exkl. AI</li>
+						</ul>
+						<button type="button" class="w-100 btn btn-lg btn-outline-primary">Jetzt anfragen</button>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card mb-4 rounded-3 shadow-sm border-primary">
+					<div class="card-header py-3 text-bg-primary border-primary">
+						<h4 class="my-0 fw-normal">Mitentwickeln</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light">ab</small> 3500 € / Monat</h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>Unbegrenzte Nutzer</li>
+							<li>50 GB Cloud-Speicherplatz</li>
+							<li>Anpassung an Ihre Bedürfnisse</li>
+							<li>Sie unterstützen die Entwicklung direkt mit</li>
+							<li>Ihre Bedrüfnisse werden Ihre Funktionen</li>
+						</ul>
+						<button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock %}
