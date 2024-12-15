@@ -32,27 +32,27 @@ return [
             ],
             'features' => [
                 'title' => 'Funktionen',
-                'features1' => [
+                'feature1' => [
                     'title' => 'Zeiterfassung',
                     'description' => 'Schluss mit Excel-Listen. Erfassen Sie Ihre Zeiten direkt online.'
                 ],
-                'features2' => [
+                'feature2' => [
                     'title' => 'Standortunabhängig',
                     'description' => 'Egal ob im Büro oder auf der Baustelle. DigiConstruct ist immer dabei.'
                 ],
-                'features3' => [
+                'feature3' => [
                     'title' => 'Digitale Baustellendokumentation',
                     'description' => 'Dokumentieren Sie Ihre Baustellen digital und haben Sie alle Informationen immer griffbereit.'
                 ],
-                'features4' => [
+                'feature4' => [
                     'title' => 'Digitale Aufgabenverteilung',
                     'description' => 'Verteilen Sie Aufgaben digital mit Fälligkeiten und behalten Sie den Überblick.'
                 ],
-                'features5' => [
+                'feature5' => [
                     'title' => 'Anfrage Management',
                     'description' => 'Verwalten Sie Anfragen digital und Automatisiert - mit KI-Technologie.'
                 ],
-                'features6' => [
+                'feature6' => [
                     'title' => 'Kostenlose Testphase',
                     'description' => 'Testen Sie DigiConstruct 30 Tage kostenlos und unverbindlich.'
                 ],
