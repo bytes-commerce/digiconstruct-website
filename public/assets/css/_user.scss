@@ -75,8 +75,10 @@
   transform-origin: center center;
 
   &.swiper-slide-active {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1) !important;
+    .card {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+    }
   }
 }
 
@@ -90,6 +92,6 @@
   }
 
   &::after {
-    font-size: 25px;
+    font-size: 25px !important;
   }
 }

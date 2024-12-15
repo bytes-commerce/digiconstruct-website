@@ -29361,8 +29361,10 @@ a:hover .text-inherit {
   transform-origin: center center;
 }
 .swiper-slide.swiper-slide-active {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1) !important;
+}
+.swiper-slide.swiper-slide-active .card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -29374,7 +29376,7 @@ a:hover .text-inherit {
   margin-right: 15px;
 }
 .swiper-button-next::after, .swiper-button-prev::after {
-  font-size: 25px;
+  font-size: 25px !important;
 }
 
 /*# sourceMappingURL=theme.css.map */
