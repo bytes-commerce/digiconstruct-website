@@ -3,16 +3,18 @@
 <header class="p-3 text-bg-dark">
 	<div class="container">
 		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-			<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-				<img src="{{ absolute_url(asset('bundles/website/assets/images/dc-bicolor-white.png')) }}"
-					 class="img-fluid"
-					 style="max-width: 285px;"
-					 alt="DigiConstruct Logo" />
-			</a>
+			<div class="col-md-3 mb-2 mb-md-0">
+				<a href="{{ absolute_url('/') }}" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+					<img src="{{ absolute_url(asset('bundles/website/assets/images/dc-bicolor-white.png')) }}"
+						 class="img-fluid"
+						 style="max-width: 285px;"
+						 alt="DigiConstruct Logo" />
+				</a>
+			</div>
 
-			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+			<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
 				<li class="nav-item">
-					<a href="#" class="nav-link px-2 text-secondary">{{ "web.digiconstruct.about.title"|trans }}</a>
+					<a href="#" class="nav-link px-2 text-white">{{ "web.digiconstruct.about.title"|trans }}</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a href="#" class="nav-link px-2 text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">{{ "web.digiconstruct.features.title"|trans }}</a>
@@ -35,7 +37,7 @@
 				</li>
 			</ul>
 
-			<div class="text-end">
+			<div class="col-md-3 text-end">
 				<button type="button" class="btn btn-primary me-2">{{ "web.digiconstruct.register.title"|trans }}</button>
 				<button type="button" class="btn btn-success">{{ "web.digiconstruct.login.title"|trans }}</button>
 			</div>
