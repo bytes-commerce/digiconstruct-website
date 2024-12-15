@@ -9,8 +9,11 @@
 
 			<div class="col-sm-12 col-md-6 text-start">
 				<h6>{{ "web.digiconstruct.industries.headline"|trans }}</h6>
-				<h2 class="hero-fade-element text-primary animate__animated animate__flipInX">{{ "web.digiconstruct.industries.title"|trans }}</h2>
-				<p class="text-muted">{{ "web.digiconstruct.industries.description"|trans }}</p>
+				<div class="d-inline-block mb-3">
+					<h2 class="hero-fade-element text-primary animate__animated animate__flipInX">{{ "web.digiconstruct.industries.title"|trans }}</h2>
+					<div class="strip bg-dark w-100 py-1 animate__animated animate__flipInX animate__delay-1s"> </div>
+				</div>
+				<p class="text-muted fs-3">{{ "web.digiconstruct.industries.description"|trans }}</p>
 			</div>
 
 			{% set industries = [
@@ -37,7 +40,7 @@
 				{
 					"title": "web.digiconstruct.industries.jobs.plumber"|trans,
 					"link": "#",
-					"icon": "bi bi-pipe"
+					"icon": "fas fa-faucet-drip"
 				},
 				{
 					"title": "web.digiconstruct.industries.jobs.carpenter"|trans,
@@ -63,22 +66,32 @@
 					"title": "web.digiconstruct.industries.jobs.buildingConstruction"|trans,
 					"link": "#",
 					"icon": "fas fa-city"
+				},
+				{
+					"title": "web.digiconstruct.industries.jobs.cleaningServices"|trans,
+					"link": "#",
+					"icon": "fas fa-broom"
+				},
+				{
+					"title": "web.digiconstruct.industries.jobs.solarConstruction"|trans,
+					"link": "#",
+					"icon": "fas fa-solar-panel"
 				}
 			] %}
 			<div class="col-sm-12">
 				<div class="d-flex justify-content-start align-items-center">
 					{% for industry in industries %}
 						{% if loop.first or loop.index % 4 == 1 %}
-							<div class="d-flex flex-column me-3">
+							<ul class="list-group list-group-flush">
 						{% endif %}
-						<div class="d-flex flex-row justify-content-start align-items-center">
+						<li class="list-group-item py-2 lh-1 ">
 							<a href="{{ industry.link }}">
 								<i class="{{ industry.icon }} me-2 fs-1"></i>
-								<span class="text-dark lh-1 fs-1">{{ industry.title }}</span>
+								<span class="text-dark fs-1">{{ industry.title }}</span>
 							</a>
-						</div>
+						</li>
 						{% if loop.index % 4 == 0 %}
-							</div>
+							</ul>
 						{% endif %}
 					{% endfor %}
 				</div>

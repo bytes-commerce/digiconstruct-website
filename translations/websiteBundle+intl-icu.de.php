@@ -121,6 +121,8 @@ return [
                     'plumber' => 'Installateur',
                     'heating' => 'Heizungsbauer',
                     'airConditioning' => 'Klimaanlagenbauer',
+                    'cleaningServices' => 'Reinigungsdienst',
+                    'solarConstruction' => 'Solarbau',
                 ]
             ]
         ]
