@@ -13,7 +13,10 @@
 						<strong class="text-white">Entdecke noch heute die benutzerfreundlichste Software für Handwerksbetriebe!</strong>
 						<p>DigiConstruct unterstützt Dich dabei, Deinen Arbeitsalltag effizienter zu gestalten. Buche jetzt eine persönliche Produktdemo mit einem unserer Experten und überzeuge Dich selbst von den Vorteilen.</p>
 
-						{% include '@Website/components/cta-button.html.twig' %}
+						{% include '@Website/components/cta-button.html.twig' with {
+							orientation: 'end',
+							subline: 'text-white'
+						} %}
 					</div>
 				</div>
 			</div>
