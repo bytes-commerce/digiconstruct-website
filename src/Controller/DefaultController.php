@@ -44,6 +44,17 @@ final class DefaultController extends AbstractController
     }
 
     #[Route(path: [
+        'en' => '/en/frequently-asked-questions-about-digiconstruct',
+        'de' => '/de/haeufig-gestellte-fragen-zu-digiconstruct'
+    ], name: 'web.app.faq')]
+    public function faqAction(): Response
+    {
+        return $this->render('@Website/pages/faq.html.twig', [
+            'page_title' => $this->translator->trans('web.digiconstruct.pricing.title', [], 'websiteBundle')
+        ]);
+    }
+
+    #[Route(path: [
         'en' => '/en/impress',
         'de' => '/de/impressum'
     ], name: 'web.app.impress')]

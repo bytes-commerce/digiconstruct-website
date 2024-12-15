@@ -79,12 +79,12 @@
 				}
 			] %}
 			<div class="col-sm-12">
-				<div class="d-flex justify-content-start align-items-center">
+				<div class="d-flex justify-content-start align-items-start flex-column flex-md-row">
 					{% for industry in industries %}
 						{% if loop.first or loop.index % 4 == 1 %}
 							<ul class="list-group list-group-flush">
 						{% endif %}
-						<li class="list-group-item py-2 lh-1 ">
+						<li class="list-group-item py-2 lh-1">
 							<a href="{{ industry.link }}">
 								<i class="{{ industry.icon }} me-2 fs-1"></i>
 								<span class="text-dark fs-1">{{ industry.title }}</span>
