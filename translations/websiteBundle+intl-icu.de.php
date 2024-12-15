@@ -95,6 +95,11 @@ return [
                     'service3' => 'Wir stehen Ihnen bei Fragen zur Software zur Verfügung.',
                     'service4' => 'Rasend-schneller Support per E-Mail.',
                 ]
+            ],
+            'industries' => [
+                'title' => 'Für alle Gewerke',
+                'headline' => 'DigiConstruct passt überall',
+                'description' => 'Egal ob Handwerker, Bauunternehmen oder Architekten. DigiConstruct ist für alle Gewerke geeignet und passt sich Ihren Bedürfnissen an. Die speziell in Zusammenarbeit mit Bauunternehmen entwickelte Software bietet Ihnen alle Funktionen, die Sie für eine effiziente Baustellenverwaltung benötigen.',
             ]
         ]
     ]
