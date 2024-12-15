@@ -32,12 +32,13 @@
 </head>
 
 <body class="{% block body_classes %}{% endblock %}">
-{% include '@Website/components/header/header.html.twig' %}
-{% block body %}{% endblock %}
-{% include '@Website/components/footer/footer.html.twig' %}
-{% block footerjavascripts %}
-	<script src="{{ absolute_url(asset('bundles/website/assets/js/hs.theme-appearance.js')) }}"></script>
-	<script src="{{ absolute_url(asset('bundles/website/assets/js/theme-custom.js')) }}"></script>
-{% endblock %}
+	{% include '@Website/components/header/header.html.twig' %}
+	{% block body %}{% endblock %}
+	{% include '@Website/components/footer/footer.html.twig' %}
+	{% block footerjavascripts %}
+		<script src="{{ absolute_url(asset('bundles/website/assets/js/hs.theme-appearance.js')) }}"></script>
+		<script src="{{ absolute_url(asset('bundles/website/assets/js/jarallax.js')) }}"></script>
+		<script src="{{ absolute_url(asset('bundles/website/assets/js/theme-custom.js')) }}"></script>
+	{% endblock %}
 </body>
 </html>
