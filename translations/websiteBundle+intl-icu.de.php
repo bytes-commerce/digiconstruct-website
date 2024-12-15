@@ -85,6 +85,17 @@ return [
             'register' => [
                 'title' => 'Registrieren'
             ],
+            'service' => [
+                'title' => 'Kostenloser Kundenservice',
+                'headline' => 'Wir helfen gerne!',
+                'description' => 'Sie haben Fragen zu DigiConstruct oder benötigen Unterstützung? Unser Kundenservice steht Ihnen gerne zur Verfügung. Kontaktieren Sie uns einfach per E-Mail oder Telefon.',
+                'checkbox' => [
+                    'service1' => 'Wir schulen Sie für die Verwendung der Software.',
+                    'service2' => 'Gemeinsam setzen wir Ihren Zugang korrekt auf und richten alle Funktionen ein.',
+                    'service3' => 'Wir stehen Ihnen bei Fragen zur Software zur Verfügung.',
+                    'service4' => 'Rasend-schneller Support per E-Mail.',
+                ]
+            ]
         ]
     ]
 ];
